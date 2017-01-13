@@ -84,7 +84,7 @@ influx_connection <-  function(host = NULL,
   if (verbose) print(response$url)
 
   # Check for communication errors
-  if (response$status_code != 204) {
+  if (!(response$status_code == 204 || response$status_code == 200)) {
     if (length(response$content) > 0) warning(rawToChar(response$content))
     stop("Influx connection failed with HTTP status code ", response$status_code)
   }
