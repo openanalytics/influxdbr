@@ -637,7 +637,7 @@ create_database <- function(con, db) {
          "s" = 1,
          "m" = 1/60,
            "h" = 1/(60*60))
-  time <- format(as.integer(as.numeric(zoo::index(xts)) * pscale), scientific = FALSE)
+  time <- format(as.numeric(zoo::index(xts)) * pscale, scientific = FALSE)
 
   # make sure all integers end with "i", this also sets mode to "character"
   # s. https://github.com/influxdb/influxdb/issues/3519
