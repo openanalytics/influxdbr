@@ -19,3 +19,5 @@ Collate:
     'influxdb_explore_schema.R'
     'influxdb_drop_data.R'
     'influxdb_diagnostics.R'
+Suggests: testthat
+RoxygenNote: 5.0.1.9000
