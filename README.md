@@ -2,7 +2,7 @@
 # influxdbr
 R interface to InfluxDB (>=0.9.3, 0.9.4 diagnotics already included)
 
-Originally development by [dleutnant](https://github.com/dleutnant/influxdbr).
+Original development by [dleutnant](https://github.com/dleutnant/influxdbr).
 
 It is unclear whether the original package has been abandoned or not. Several improvements/fixes have been proposed but further work/development has been scattered across multiple repositories. 
 
